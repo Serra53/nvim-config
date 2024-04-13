@@ -66,6 +66,7 @@ return require('packer').startup(function(use)
         },
     }
     use("eddyekofo94/gruvbox-flat.nvim")
+    use("f4z3r/gruvbox-material.nvim")
     use {"nvim-neotest/neotest",
         requires = {
           "nvim-lua/plenary.nvim",
@@ -84,6 +85,8 @@ return require('packer').startup(function(use)
         requires = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }
     }
     use { "catppuccin/nvim", as = "catppuccin" }
+    use { "nvim-neotest/nvim-nio" }
+
 end)
 
 

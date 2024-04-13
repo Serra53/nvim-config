@@ -115,6 +115,11 @@ _G.packer_plugins = {
     path = "/Users/vserra/.local/share/nvim/site/pack/packer/start/gruvbox-flat.nvim",
     url = "https://github.com/eddyekofo94/gruvbox-flat.nvim"
   },
+  ["gruvbox-material.nvim"] = {
+    loaded = true,
+    path = "/Users/vserra/.local/share/nvim/site/pack/packer/start/gruvbox-material.nvim",
+    url = "https://github.com/f4z3r/gruvbox-material.nvim"
+  },
   harpoon = {
     loaded = true,
     path = "/Users/vserra/.local/share/nvim/site/pack/packer/start/harpoon",
@@ -179,6 +184,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/vserra/.local/share/nvim/site/pack/packer/start/nvim-metals",
     url = "https://github.com/scalameta/nvim-metals"
+  },
+  ["nvim-nio"] = {
+    loaded = true,
+    path = "/Users/vserra/.local/share/nvim/site/pack/packer/start/nvim-nio",
+    url = "https://github.com/nvim-neotest/nvim-nio"
   },
   ["nvim-tree.lua"] = {
     loaded = true,
