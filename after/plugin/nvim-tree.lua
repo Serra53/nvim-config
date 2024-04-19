@@ -16,9 +16,6 @@ require("nvim-tree").setup({
 local function my_on_attach(bufnr)
   local api = require "nvim-tree.api"
 
-  local function opts(desc)
-    return { desc = "nvim-tree: " .. desc, buffer = bufnr, noremap = true, silent = true, nowait = true }
-  end
 
   -- default mappings
   api.config.mappings.default_on_attach(bufnr)
@@ -28,21 +25,31 @@ local function my_on_attach(bufnr)
   vim.keymap.set('n', '<leader>ntc', api.tree.close)
   vim.keymap.set('n', '<leader>ntr', api.fs.rename_sub)
   vim.keymap.set('n', '<leader>ntt', api.node.open.tab)
+
+  --fix to current file
+  vim.g.nvim_tree_respect_buf_cwd = 1
 end
 
 -- pass to setup along with your other options
 require("nvim-tree").setup {
   ---
   on_attach = my_on_attach,
+
+  update_cwd = true,
+
+  update_focused_file = {
+    enable = true,
+    update_cwd = true,
+  },
   ---
-  diagnostic = {
+  diagnostics = {
       enable = true,
       show_on_dirs = true,
       icons = {
           hint = "",
           info = "",
-          warning = "",
           error = "",
+          warning = "•"
       },
   },
 }
