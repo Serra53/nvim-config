@@ -66,13 +66,20 @@ lsp.on_attach(function(client, bufnr)
   vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
 end)
 
-lsp.setup()
+local capabilities = require("cmp_nvim_lsp").default_capabilities()
+
+lsp.setup({
+    capabiltites = capabilities
+})
 
 vim.diagnostic.config({
-    virtual_text = false,
-    virtual_lines = false,
+    virtual_text = true,
+    virtual_lines = true,
     underline = true
 })
+
+
+
 
 
 

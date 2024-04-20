@@ -87,6 +87,13 @@ return require('packer').startup(function(use)
     use { "catppuccin/nvim", as = "catppuccin" }
     use { "nvim-neotest/nvim-nio" }
 
+    use {"hrsh7th/nvim-cmp"}
+    use {"hrsh7th/cmp-nvim-lsp"}
+    use {"saadparwaiz1/cmp_luasnip"}
+    use {"rafamadriz/friendly-snippets"}
+
+
+
 end)
 
 
