@@ -43,14 +43,20 @@ return require('packer').startup(function(use)
             {'neovim/nvim-lspconfig'},
             -- Autocompletion
             {'hrsh7th/nvim-cmp'},
+            {'hrsh7th/cmp-buffer'},
+            {'hrsh7th/cmp-path'},
+            {"saadparwaiz1/cmp_luasnip"},
             {'hrsh7th/cmp-nvim-lsp'},
+            {'hrsh7th/cmp-nvim-lua'},
+
+            --snippets
             {'L3MON4D3/LuaSnip'},
+            {"rafamadriz/friendly-snippets"},
+
+            --mason
+            {"williamboman/mason.nvim"},
+            {"williamboman/mason-lspconfig.nvim"},
         }
-    }
-    use {
-    "williamboman/mason.nvim",
-    "williamboman/mason-lspconfig.nvim",
-    "neovim/nvim-lspconfig",
     }
     use("scalameta/nvim-metals")
     use {
@@ -87,10 +93,6 @@ return require('packer').startup(function(use)
     use { "catppuccin/nvim", as = "catppuccin" }
     use { "nvim-neotest/nvim-nio" }
 
-    use {"hrsh7th/nvim-cmp"}
-    use {"hrsh7th/cmp-nvim-lsp"}
-    use {"saadparwaiz1/cmp_luasnip"}
-    use {"rafamadriz/friendly-snippets"}
 
 
 

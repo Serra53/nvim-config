@@ -1,4 +1,6 @@
 
+
+
 local lsp = require("lsp-zero")
 
 lsp.preset("recommended")
@@ -37,7 +39,18 @@ cmp_mappings['<S-Tab>'] = nil
 --gopls configs
 
 cmp.setup({
-  mapping = cmp_mappings
+  mapping = cmp_mappings,
+  sources = cmp.config.sources({
+                { name = 'nvim_lsp' },
+                { name = 'luasnip' }, -- For luasnip users.
+            }, {
+                { name = 'buffer' },
+            }),
+ snippet = {
+                expand = function(args)
+                    require('luasnip').lsp_expand(args.body) -- For `luasnip` users.
+                end,
+            },
 })
 
 lsp.set_preferences({
@@ -66,20 +79,16 @@ lsp.on_attach(function(client, bufnr)
   vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
 end)
 
-local capabilities = require("cmp_nvim_lsp").default_capabilities()
+lsp.capabilities = require("cmp_nvim_lsp").default_capabilities()
 
-lsp.setup({
-    capabiltites = capabilities
-})
+require("luasnip.loaders.from_snipmate").lazy_load()
+require("luasnip/loaders/from_vscode").lazy_load()
+
+lsp.setup()
+
 
 vim.diagnostic.config({
     virtual_text = true,
     virtual_lines = true,
     underline = true
 })
-
-
-
-
-
-
