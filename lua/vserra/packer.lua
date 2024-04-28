@@ -25,7 +25,7 @@ return require('packer').startup(function(use)
         require("everforest").setup()
         end,}
     )
-	
+
 	use("nvim-treesitter/playground")
   	use("theprimeagen/harpoon")
 	use("mbbill/undotree")
@@ -92,6 +92,12 @@ return require('packer').startup(function(use)
     }
     use { "catppuccin/nvim", as = "catppuccin" }
     use { "nvim-neotest/nvim-nio" }
+    use { 'VonHeikemen/fine-cmdline.nvim',
+      requires = {
+        {'MunifTanjim/nui.nvim'}
+      }
+    }
+    use { "nvimtools/none-ls.nvim" }
 
 
 

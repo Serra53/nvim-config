@@ -125,6 +125,11 @@ _G.packer_plugins = {
     path = "/Users/vserra/.local/share/nvim/site/pack/packer/start/everforest-nvim",
     url = "https://github.com/neanias/everforest-nvim"
   },
+  ["fine-cmdline.nvim"] = {
+    loaded = true,
+    path = "/Users/vserra/.local/share/nvim/site/pack/packer/start/fine-cmdline.nvim",
+    url = "https://github.com/VonHeikemen/fine-cmdline.nvim"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/Users/vserra/.local/share/nvim/site/pack/packer/start/friendly-snippets",
@@ -189,6 +194,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/vserra/.local/share/nvim/site/pack/packer/start/neotest-vim-test",
     url = "https://github.com/nvim-neotest/neotest-vim-test"
+  },
+  ["none-ls.nvim"] = {
+    loaded = true,
+    path = "/Users/vserra/.local/share/nvim/site/pack/packer/start/none-ls.nvim",
+    url = "https://github.com/nvimtools/none-ls.nvim"
+  },
+  ["nui.nvim"] = {
+    loaded = true,
+    path = "/Users/vserra/.local/share/nvim/site/pack/packer/start/nui.nvim",
+    url = "https://github.com/MunifTanjim/nui.nvim"
   },
   ["null-ls.nvim"] = {
     loaded = true,

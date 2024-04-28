@@ -34,3 +34,6 @@ vim.opt.mouse = "a"
 vim.opt.linespace = 0
 
 nvim_tree_respect_buf_cwd = 1
+
+--remaps
+
