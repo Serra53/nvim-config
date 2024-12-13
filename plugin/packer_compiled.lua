@@ -240,6 +240,11 @@ _G.packer_plugins = {
     path = "/Users/vserra/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
+  ["nvim-ts-rainbow2"] = {
+    loaded = true,
+    path = "/Users/vserra/.local/share/nvim/site/pack/packer/start/nvim-ts-rainbow2",
+    url = "https://github.com/HiPhish/nvim-ts-rainbow2"
+  },
   ["nvim-web-devicons"] = {
     loaded = true,
     path = "/Users/vserra/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",

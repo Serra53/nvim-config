@@ -98,6 +98,7 @@ return require('packer').startup(function(use)
       }
     }
     use { "nvimtools/none-ls.nvim" }
+    use { "HiPhish/nvim-ts-rainbow2" }
 
 
 
