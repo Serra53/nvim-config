@@ -19,4 +19,5 @@ vim.api.nvim_create_autocmd({"ModeChanged"}, {
     callback = mode_colors.set_cursorline_color,
 })
 
+
 return mode_colors

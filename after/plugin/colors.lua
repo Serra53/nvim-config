@@ -15,5 +15,5 @@ function ColorMyGruvbox()
     vim.api.nvim_set_hl(0, "EndOfBuffer", {bg = "none"})
 end
 
-ColorMyPencils()
+ColorMyPencils("catppuccin-frappe")
 
