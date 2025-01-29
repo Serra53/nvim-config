@@ -35,10 +35,6 @@ return require('packer').startup(function(use)
         'VonHeikemen/lsp-zero.nvim',
         branch = 'v3.x',
         requires = {
-            --- Uncomment these if you want to manage LSP servers from neovim
-            -- {'williamboman/mason.nvim'},
-            -- {'williamboman/mason-lspconfig.nvim'},
-
             -- LSP Support
             {'neovim/nvim-lspconfig'},
             -- Autocompletion
@@ -72,7 +68,7 @@ return require('packer').startup(function(use)
         },
     }
     use("eddyekofo94/gruvbox-flat.nvim")
-    use("f4z3r/gruvbox-material.nvim")
+    use("sainnhe/gruvbox-material")
     use {"nvim-neotest/neotest",
         requires = {
           "nvim-lua/plenary.nvim",

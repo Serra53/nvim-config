@@ -15,8 +15,6 @@ require("nvim-tree").setup({
 
 local function my_on_attach(bufnr)
   local api = require "nvim-tree.api"
-
-
   -- default mappings
   api.config.mappings.default_on_attach(bufnr)
 

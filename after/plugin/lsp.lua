@@ -13,7 +13,7 @@ require('mason-lspconfig').setup({
     'jedi_language_server',
     'gopls',
     'rust_analyzer',
-    'clojure_lsp'
+    'clojure_lsp',
     },
     handlers = {
         lsp.default_setup,
