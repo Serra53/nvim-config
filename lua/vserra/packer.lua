@@ -93,7 +93,8 @@ return require('packer').startup(function(use)
         {'MunifTanjim/nui.nvim'}
       }
     }
-    use { "nvimtools/none-ls.nvim" }
+    use {"nvimtools/none-ls.nvim" }
+    use {"sphamba/smear-cursor.nvim"}
 
 
 

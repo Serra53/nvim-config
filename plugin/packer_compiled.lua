@@ -260,6 +260,11 @@ _G.packer_plugins = {
     path = "/Users/vserra/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
+  ["smear-cursor.nvim"] = {
+    loaded = true,
+    path = "/Users/vserra/.local/share/nvim/site/pack/packer/start/smear-cursor.nvim",
+    url = "https://github.com/sphamba/smear-cursor.nvim"
+  },
   ["telescope-file-browser.nvim"] = {
     loaded = true,
     path = "/Users/vserra/.local/share/nvim/site/pack/packer/start/telescope-file-browser.nvim",
