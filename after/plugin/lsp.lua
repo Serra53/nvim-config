@@ -25,7 +25,8 @@ local cmp_select = {behavior = cmp.SelectBehavior.Select}
 local cmp_mappings = lsp.defaults.cmp_mappings({
   ['<C-p>'] = cmp.mapping.select_prev_item(cmp_select),
   ['<C-n>'] = cmp.mapping.select_next_item(cmp_select),
-  ['<C-Space>'] = cmp.mapping.confirm({ select = true }),
+  ['<C-/>'] = cmp.mapping.confirm({ select = true,
+  behavior = cmp.ConfirmBehavior.Insert}),
   ["<C-c>"] = cmp.mapping.complete(),
 })
 
@@ -83,7 +84,6 @@ require("luasnip.loaders.from_snipmate").lazy_load()
 require("luasnip/loaders/from_vscode").lazy_load()
 
 lsp.setup()
-
 
 vim.diagnostic.config({
     virtual_text = true,
